@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container a{
+    background-color: rgb(247, 212, 212);
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu{
+    color: white;
+    align-items: center;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hero Section */
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero{
+    background: url("assets/languages.png") center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+.buttons .started{
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttons .info{
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }
